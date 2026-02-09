@@ -2,6 +2,8 @@
 
 This repository contains selected NLP (Natural Language Processing) assignments.
 
+- **`1/` – Project 1**: This project conducts a statistical analysis of a Finnish language corpus extracted from Wikipedia to explore the lexical structure of an agglutinative language. It validates Zipf's Law, calculates the vocabulary size required for text comprehension, and identifies the semantic "core" using network analysis and degree centrality. The processing pipeline utilizes advanced NLP tools like `Stanza` and `Simplemma` to handle complex morphological forms and visualize word co-occurrences.
+
 - **`2/` – Project 2**: Spanish SVO sentence constructor with a dark-themed `customtkinter` GUI.  
   The app lets you build Spanish SVO sentences (subject–verb–object) with correct agreement (gender, number, tense, mood) and shows detailed logs of the morphology decisions.
 
@@ -13,12 +15,23 @@ This repository contains selected NLP (Natural Language Processing) assignments.
 - Python 3.11+ (recommended)
 - Optionally [`uv`](https://github.com/astral-sh/uv) for fast virtualenv and dependency management
 
-Each subproject (`2/`, `3/`) is self-contained and has its own:
+Each subproject (`1/`,`2/`, `3/`) is self-contained and has its own:
 
 - `README.md` – detailed description and run instructions  
 - `requirements.txt` – Python dependencies for that project
 
 ### Quickstart
+
+- **Project 1**
+
+  ```bash
+  cd 1
+  python -m venv .venv
+  source .venv/bin/activate  # macOS / Linux
+  # .venv\Scripts\activate   # Windows
+  pip install -r requirements.txt
+  python 1_process_corpus.py
+  ```
 
 - **Project 2**
 
